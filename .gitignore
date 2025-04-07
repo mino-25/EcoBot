@@ -1,0 +1,21 @@
+# .gitignore
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+
+# Environnements virtuels
+env/
+
+# Fichiers de configuration de l'IDE
+.vscode/
+.idea/
+
+# Fichiers de la base de données
+db.sqlite3
+
+# Fichiers de logs
+*.log
+
+# Secrets Django (clé secrète, par exemple)
+*.env

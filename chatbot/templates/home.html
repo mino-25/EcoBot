@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoBot</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>EcoBot 💬</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="commande" placeholder="Tape une commande (ex: problématique)">
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <div style="margin-top: 20px;">
+        {{ response|safe }}
+    </div>
+
+    {% if response %}
+        <!-- Ajout du bouton pour revenir à l'accueil -->
+        <form method="get">
+            <button type="submit">Revenir à l'accueil</button>
+        </form>
+    {% endif %}
+</body>
+</html>

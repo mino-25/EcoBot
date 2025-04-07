@@ -1,0 +1,64 @@
+/* style.css */
+
+/* Fond et texte de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    padding-top: 20px;
+}
+
+/* Formulaire de saisie */
+form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Champ de texte */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Boutons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Zone de réponse */
+div {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Style du bouton "Revenir à l'accueil" */
+form button[type="submit"] {
+    background-color: #f44336;
+}
+
+form button[type="submit"]:hover {
+    background-color: #e53935;
+}
