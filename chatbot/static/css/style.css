@@ -2,7 +2,12 @@
 
 /* Fond et texte de base */
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, sans-serif;
+    height: 100vh;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
@@ -10,16 +15,19 @@ body {
 }
 
 /* En-tête */
+
+img{
+    width: 10%;
+}
+
 h1 {
     text-align: center;
-    color: #4CAF50;
-    padding-top: 20px;
+    color: #111111;
 }
 
 /* Formulaire de saisie */
 form {
     text-align: center;
-    margin-top: 50px;
 }
 
 /* Champ de texte */
@@ -28,7 +36,7 @@ input[type="text"] {
     font-size: 16px;
     width: 300px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #e7e7e7;
 }
 
 /* Boutons */
@@ -48,17 +56,28 @@ button:hover {
 
 /* Zone de réponse */
 div {
-    text-align: center;
+    padding: 1%;
+    width: 300px;
+    color: black;
+
+    /*border: solid 0.2px black;*/
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    box-shadow: 0 8px 10px 0 rgba(6, 6, 6, 0.37); /* ombre douce */
+    backdrop-filter: blur(1px); /* flou d’arrière-plan */
+
     margin-top: 30px;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 15px;
+    text-align: center;
 }
 
 /* Style du bouton "Revenir à l'accueil" */
 form button[type="submit"] {
-    background-color: #f44336;
+    margin-top: 20px;
+    background-color: #28d800;
 }
 
 form button[type="submit"]:hover {
-    background-color: #e53935;
+    background-color: #11c3ff;
 }

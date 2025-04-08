@@ -2,10 +2,10 @@ from django.shortcuts import render
 
 def home(request):
     response = "👋 Bienvenue sur EcoBot !<br>Voici les commandes disponibles :<br>" \
-               "- <strong>problématique</strong><br>" \
-               "- <strong>solutions</strong><br>" \
-               "- <strong>sommaire</strong><br>" \
-               "- <strong>crédits</strong>"
+               "<h3>problématique</h3><br>" \
+               "<h3>- solutions</h3><br>" \
+               "<h3>- sommaire</h3><br>" \
+               "<h3>- crédits</h3>"
 
     if request.method == "POST":
         commande = request.POST.get("commande", "").strip().lower()
@@ -24,9 +24,9 @@ def home(request):
     # Si on vient de cliquer sur "Revenir à l'accueil", on affiche les commandes
     elif request.method == "GET":
         response = "👋 Bienvenue sur EcoBot !<br>Voici les commandes disponibles :<br>" \
-                   "- <strong>problématique</strong><br>" \
-                   "- <strong>solutions</strong><br>" \
-                   "- <strong>sommaire</strong><br>" \
-                   "- <strong>crédits</strong>"
+                   "<h3>- problématique</h3><br>" \
+                   "<h3>- solutions</h3><br>" \
+                   "<h3>- sommaire</h3><br>" \
+                   "<h3>- crédits</h3>"
 
     return render(request, 'home.html', {'response': response})
