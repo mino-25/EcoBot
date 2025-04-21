@@ -64,7 +64,7 @@ div {
     border-radius: 10px;
 
     background: linear-gradient(135deg, #ffffff, #ffffff);
-    box-shadow: 0 8px 10px 0 rgba(6, 6, 6, 0.37); /* ombre douce */
+    box-shadow: 0 4px 6px 0 rgba(6, 6, 6, 0.37); /* ombre douce */
     backdrop-filter: blur(1px); /* flou d’arrière-plan */
 
     margin-top: 30px;
